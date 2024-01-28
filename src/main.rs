@@ -1,6 +1,6 @@
 use std::{env, path::Path, time::Instant};
 
-use pscan::{print_all_paths, scan_print};
+use serch::{print_all_paths, scan_print};
 
 fn main() {
     let inst = Instant::now();
