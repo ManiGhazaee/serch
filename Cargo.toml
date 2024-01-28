@@ -2,9 +2,14 @@
 name = "serch"
 version = "0.1.0"
 edition = "2021"
+license = "MIT"
+keywords = ["cli", "find", "search"]
+repository = "https://github.com/ManiGhazaee/serch"
+authors = ["ManiGhazaee <hosseinghazaee1@gmail.com>"]
+description = "A cli tool that recursively searches all paths within the current directory or a specified directory for a given string"
+readme = "README.md"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 termcolor = "1.4.1"
-jwalk = "*"
+jwalk = "0.8.1"
