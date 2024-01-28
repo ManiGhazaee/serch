@@ -31,6 +31,8 @@ pub fn scan_print_end(path: &Path, pat: &[u8], pat_len: usize) {
         while i <= path_len - pat_len {
             if &path[i..i + pat_len] == pat {
                 col.push(i + 1);
+                i += path_len;
+                continue;
             }
             i += 1;
         }
@@ -59,6 +61,8 @@ pub fn scan_print(path: &Path, pat: &[u8], pat_len: usize) {
         while i <= path_len - pat_len {
             if &path[i..i + pat_len] == pat {
                 col.push(i + 1);
+                i += pat_len;
+                continue;
             }
             i += 1;
         }
